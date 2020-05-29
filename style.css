@@ -63,7 +63,7 @@ width: 11%;
 height: 11%;
 }
 .blogs {
-    display: flex;
+   display: flex; 
   justify-content: space-between;
   align-content: space-around;
   flex-wrap: wrap;
@@ -75,9 +75,59 @@ height: 11%;
 .single {
     display: flex;
     justify-content: center;
+    align-content: space-around;
     border: 5px solid white;
     padding: 2rem 0;
+   
 }
+
+
+   
+
+
+.single .item1 {
+    display: flex;
+    width: 38%;
+    border: 2px solid white;
+    flex-grow: 0.9;
+   
+
+   
+   
+  
+}
+.single .item2 {
+    display: flex;
+    width: 59%;
+    margin-left: 0.8rem;
+   flex-grow: 0.9;
+   border: 2px solid white;
+}
+ #edeka{
+    color: rgba(241, 206, 6, 0.959);
+    font-weight: 700;
+    font-size: 2rem;
+    
+}
+.edeka {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+
+.item2 .ueberschriften {
+    
+    line-height: 1.0;
+   
+}
+
+.item2 .text {
+
+ border: 3px solid white;
+
+}
+
 
 .single .image a{
     position: relative;
@@ -95,8 +145,26 @@ height: 11%;
    border-radius: 0.3rem;
   
    
-   
+
 }
+.blog2{
+    display: flex;
+    width: 99%;
+    padding: 0.5rem;
+    border-bottom: 3px solid white;
+    border-style: outset;
+    border-radius: 0.3rem;
+    
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+
+   
+  
+   
+    
+}
+ 
 .blog .virus {
     align-items: center;
 }
@@ -109,23 +177,27 @@ height: 11%;
 }
 
 .image video, img {
-    width:100%;
+    width: 100%;
     height: 100%;
-  
+   
+    
 }
 
-.blog .text {
+.text {
     font-family: 'Libre Baskerville', sans-serif;
     line-height: 1.6;
-    border: 2px solid white;
+  
    padding-top: 0.2rem;
 }
 
-.single .text {
+
+.single .blog .text {
     margin-top: -1rem;
-    border: 2px solid white;
+   
 
 }
+
+
 .article {
     word-spacing: 0.12rem;
    line-height: 1.5;
@@ -172,6 +244,14 @@ height: 11%;
     .blog{
    
         width: 95%;}
+
+    .item1, .item2{
+         
+         width: 95%;
+     }   
+    
+
+    
        
 
 }
