@@ -40,6 +40,7 @@ max-width: 960px;
 margin: 0 auto;
 padding-top: 1.0rem;
 
+
    
 }
 
@@ -62,34 +63,62 @@ nav img {
 width: 11%;
 height: 11%;
 }
-.blogs {
+.blog-container{
    display: flex; 
   justify-content: space-between;
-  align-content: space-around;
+  align-content: center;
+
   flex-wrap: wrap;
 
-   border: 5px solid white;
-   margin-bottom: 0rem;
+   border: 1px solid white;
+   
    padding: 2rem 0;
 }
-.single {
+
+.blog-single {
     display: flex;
-    justify-content: center;
-    align-content: space-around;
-    border: 5px solid white;
     padding: 2rem 0;
-   
+    justify-content: center;
+    border: 1px solid white;
+    align-content: space-around;
 }
 
+.blog{
+   
+    width: 45%;
+    
+    padding: 0.5rem;
+    border-bottom: 3px solid white;
+    border-style: outset;
+    border-radius: 0.3rem;
+    }
+
+
+
+.single {
+   
+    display:flex;
+  
+    padding: 0.5rem ;
+    justify-content: space-between;
+  
+    border-bottom: 3px solid white;
+    border-style: outset;
+    border-radius: 0.3rem;
+  }
 
    
-
+.item {
+    display: flex;
+   
+    width: 33%;
+}
 
 .single .item1 {
-    display: flex;
-    width: 38%;
-    border: 2px solid white;
-    flex-grow: 0.9;
+    display:flex;
+    width: 40%;
+  
+   
    
 
    
@@ -97,11 +126,14 @@ height: 11%;
   
 }
 .single .item2 {
-    display: flex;
-    width: 59%;
-    margin-left: 0.8rem;
-   flex-grow: 0.9;
-   border: 2px solid white;
+ display: flex;
+ flex-wrap: wrap;
+align-content: space-between;
+    width: 58%;
+   
+   
+   
+  
 }
  #edeka{
     color: rgba(241, 206, 6, 0.959);
@@ -124,81 +156,78 @@ height: 11%;
 
 .item2 .text {
 
- border: 3px solid white;
+
 
 }
 
 
-.single .image a{
-    position: relative;
-    top: -1.5rem;
-    left: 22rem;
+.blog-single .source {
+    text-align: right;
+    margin-top: -1.2rem;
+    padding-right: 0.2rem;
     font-size: smaller;
 }
-.blog{
-   
-   width: 45%;
-   
-   padding: 0.5rem;
-   border-bottom: 3px solid white;
-   border-style: outset;
-   border-radius: 0.3rem;
+
   
    
 
-}
-.blog2{
-    display: flex;
-    width: 99%;
-    padding: 0.5rem;
-    border-bottom: 3px solid white;
-    border-style: outset;
-    border-radius: 0.3rem;
-    
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
 
-   
-  
-   
-    
-}
  
-.blog .virus {
-    align-items: center;
-}
-
-.col {
    
-  
-    
-   
-}
 
-.image video, img {
+
+
+ video, img {
     width: 100%;
     height: 100%;
    
     
 }
 
-.text {
-    font-family: 'Libre Baskerville', sans-serif;
-    line-height: 1.6;
+
+
+ .image{
+    
   
-   padding-top: 0.2rem;
+  
+}
+
+#inDänemark {
+ 
+ 
+   
+   
 }
 
 
-.single .blog .text {
-    margin-top: -1rem;
+.text {
+    font-family: 'Libre Baskerville', sans-serif;
+    line-height: 1.6;
+    
+  border: 1px solid white;
+   padding-top: 0.2rem;
+}
+
+.date {
+  width: 100%;
+    font-family: inherit;
+    font-size: smaller;
+    border: solid 1px white;
+    text-align: right;
+    margin-top: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+
+.blog-single .blog .text {
    
+   margin-top: 0.2rem;
 
 }
 
 
 .article {
+    padding: 2rem 0;
     word-spacing: 0.12rem;
    line-height: 1.5;
 
