@@ -63,15 +63,28 @@ nav img {
 width: 11%;
 height: 11%;
 }
+
+table {
+    margin-top: 2rem;
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: 5px 5px 15px indigo;
+    
+}
+
+td {
+    text-align: center;
+    width: 50%;
+    
+    border: 1px solid white;
+}
+
 .blog-container{
    display: flex; 
   justify-content: space-between;
   align-content: center;
-
   flex-wrap: wrap;
-
-   border: 1px solid white;
-   
+  border: 1px solid white;
    padding: 2rem 0;
 }
 
