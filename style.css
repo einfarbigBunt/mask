@@ -34,22 +34,27 @@ nav {
    border-style: outset;
    border-radius: 0.3rem;
 }
+.posts{
+    
+}
 .container {
-
+    
 max-width: 960px;
 margin: 0 auto;
 padding-top: 1.0rem;
 
 
+
+
    
 }
 
-.container a {
+ a {
     text-decoration: none;
     color:indigo;
   }
 
-  .container a:hover {
+ a:hover {
     color: orangered;
   }
 
@@ -65,7 +70,8 @@ height: 11%;
 }
 
 table {
-    margin-top: 2rem;
+    margin: 2rem 0 1rem 0;
+
     width: 100%;
     border: 1px solid white;
     box-shadow: 5px 5px 15px indigo;
@@ -79,6 +85,91 @@ td {
     border: 1px solid white;
 }
 
+.banner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   
+   
+
+}
+.side{
+    width: 35%;
+    border: 2px dashed white;
+    
+}
+
+.center{
+    width:30%;
+    
+    border: 2px solid white;
+   
+}
+.shopping{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    padding: 4rem 0rem 4rem 1rem;
+  
+    border: solid 1px white;
+    
+    
+    
+
+} 
+.shopping-item {
+   
+    border-bottom: solid 3px white;
+    border-style: outset;
+    border-radius: 0.3rem;
+    text-align: center;
+  
+    width: 70px;
+    flex-shrink: 2;
+    
+}
+.shopping-item img{
+    width: 60%;
+    
+} 
+
+#esprit, #fashion{
+    width: 120px;
+   
+}
+
+@media only screen and (max-width: 750px){
+
+    
+    .shopping {
+        
+        padding: 4rem 0rem 4rem 0rem;
+    }
+   
+    
+  
+    .shoping-item{
+       
+        border-bottom: solid 3px white;
+        border-style: inset;
+        border-radius: 0.3rem;
+    border-radius: 0.3rem;
+       
+    }
+    
+     
+   .center{
+       width: 50%;
+      
+    
+   }
+   .side {
+       width: 25%;
+   }
+}
+
+
 .blog-container{
    display: flex; 
   justify-content: space-between;
@@ -89,35 +180,45 @@ td {
 }
 
 .blog-single {
-    display: flex;
+ display: flex;
+ justify-content: center;
     padding: 2rem 0;
-    justify-content: center;
-    border: 1px solid white;
-    align-content: space-around;
+  
+  
+    
 }
 
-.blog{
-   
-    width: 45%;
-    
+.border{
     padding: 0.5rem;
     border-bottom: 3px solid white;
     border-style: outset;
     border-radius: 0.3rem;
+
+}
+.blog{
+   
+    width: 45%;
+   
+    padding: 0.5rem;
+    border-bottom: 3px solid white;
+    border-style: outset;
+    border-radius: 0.3rem;
+   
     }
 
 
 
 .single {
-   
+    
     display:flex;
-  
-    padding: 0.5rem ;
+   
     justify-content: space-between;
   
     border-bottom: 3px solid white;
     border-style: outset;
     border-radius: 0.3rem;
+    margin: 2rem 0;
+  
   }
 
    
@@ -125,11 +226,14 @@ td {
     display: flex;
    
     width: 33%;
+   
+  
 }
 
 .single .item1 {
     display:flex;
     width: 40%;
+   
   
    
    
@@ -139,9 +243,8 @@ td {
   
 }
 .single .item2 {
- display: flex;
- flex-wrap: wrap;
-align-content: space-between;
+    
+ 
     width: 58%;
    
    
@@ -167,11 +270,7 @@ align-content: space-between;
    
 }
 
-.item2 .text {
 
-
-
-}
 
 
 .blog-single .source {
@@ -182,12 +281,6 @@ align-content: space-between;
 }
 
   
-   
-
-
- 
-   
-
 
 
  video, img {
@@ -195,21 +288,6 @@ align-content: space-between;
     height: 100%;
    
     
-}
-
-
-
- .image{
-    
-  
-  
-}
-
-#inDänemark {
- 
- 
-   
-   
 }
 
 
@@ -273,7 +351,11 @@ align-content: space-between;
 }
 
 
-@media only screen and (max-width: 480px){
+
+@media only screen and (max-width: 580px){
+
+    
+   
     nav h1 {
         font-size: 12px;
     }
@@ -286,10 +368,25 @@ align-content: space-between;
     .blog{
    
         width: 95%;}
-
-    .item1, .item2{
+.blog-single{
+    width:100%;
+  
+}
+        .single{
+           width: 98%;
+           flex-direction: column;
+         
+           
+        }
+        
+    .single .item1, .single .item2{
          
          width: 95%;
+         margin-left: 0.5rem; 
+         margin-bottom: 1rem;
+         border: 2px dashed white;
+        
+         
      }   
     
 
